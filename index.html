@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj D. Dighe | UI/UX & AI</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/AD-logo.svg">
+  <link rel="apple-touch-icon" href="/assets/AD-logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#Fdfcf8',
+            ink: '#2B2A29',
+            charcoal: '#3d3d3d',
+            clay: '#8a817c',
+            pencil: '#d6d3d1',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            hand: ['Nothing You Could Do', 'cursive'],
+          },
+          animation: {
+            'draw': 'draw 1.5s ease-out forwards',
+            'fade-in': 'fadeIn 0.8s ease-out forwards',
+          },
+          keyframes: {
+            draw: {
+              '0%': { strokeDasharray: '1000', strokeDashoffset: '1000' },
+              '100%': { strokeDashoffset: '0' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Nothing+You+Could+Do&display=swap"
+    rel="stylesheet">
+  <style>
+    /* Hide scrollbar for clean look but keep functionality */
+    html,
+    body {
+      -ms-overflow-style: none !important;
+      /* IE and Edge */
+      scrollbar-width: none !important;
+      /* Firefox */
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      background: transparent !important;
+    }
+
+    /* Hide default cursor globally - custom cursor will replace it */
+    * {
+      cursor: none !important;
+    }
+
+    /* Re-enable appropriate cursors for form inputs */
+    input,
+    textarea,
+    select,
+    [contenteditable] {
+      cursor: text !important;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.0.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-paper text-ink antialiased selection:bg-clay selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
