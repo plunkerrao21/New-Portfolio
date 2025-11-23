@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import MagneticObject from './MagneticObject';
-import profileImage from '../assets/MyImage.png';
+import profileImage from '../assets/Myimage.webp';
 import SplitText from './SplitText';
 
 interface ParametricHeroProps {
